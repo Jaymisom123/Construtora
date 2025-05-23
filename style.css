@@ -1,0 +1,72 @@
+
+.carousel-container {
+ 
+  margin: auto;
+  width: 40%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  height: 250px; 
+  background-color: #f1f1f1;
+  margin-top: 16px;
+}
+
+.carousel-track {
+  display: flex;
+  width: 500%;
+  animation: slideHorizontal 20s linear infinite;
+}
+
+.carousel-track img {
+  width: 20%; 
+  height: 250px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes slideHorizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%); /* desliza 4 imagens (4x20%) para esquerda */
+  }
+}
+
+
+
+.logo-mensagem {
+  position: fixed;
+  right: 20px; 
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.logo-mensagem .link-whatsapp {
+  width: 50px; 
+  height: auto; 
+  transition: transform 0.2s linear;
+}
+
+.logo-mensagem .link-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+
+.footer {
+  background-color: #1a1a1a; 
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  max-width: 100%;
+  
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
