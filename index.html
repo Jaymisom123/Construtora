@@ -2,187 +2,411 @@
 <html lang="pt-br">
 
 <head>
-    <title>Construtora Metropolitana</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtora Metropolitana - Construindo o Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body style="width:100%; height:100vh; margin:0; padding:0;">
-
-    <header
-        style="background-color: #1a1a1a; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; color: white;">
-        <div style="font-size: 24px; font-weight: bold;">
-            Construtora Metropolitana
-        </div>
-        <nav>
-            <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Início</a>
-            <a href="sobre.html" style="color: white; margin: 0 15px; text-decoration: none;">Sobre</a>
-            <a href="projetos.html" style="color: white; margin: 0 15px; text-decoration: none;">Projetos</a>
-            <a href="contato.html" style="color: white; margin: 0 15px; text-decoration: none;">Contato</a>
-            <a href="https://wa.me/5594991518569?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20obra."
-                style="background-color: #25D366; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+                        <div class="nav-brand">
+                <img src="img/construtoraLogo.png" alt="Construtora Metropolitana" class="logo">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#contact" class="nav-link">Contato</a>
+                <a href="https://wa.me/5594927478881?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento" class="cta-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
                 Solicitar Orçamento
             </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-
-    <div class="w3-row">
-        <div class="w3-half w3-container">
-            <h1 class="w3-xxlarge w3-text-light-balck">Olá</h1>
-            <h1 class="w3-xxlarge w3-text-grey">Nós somos</h1>
-            <h1 class="w3-jumbo">CONSTRUTORA METROPOLITANA</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
         </div>
-        <div class="w3-half w3-container w3-xlarge w3-text-grey">
-            <p>Criamos equipes de design
-                - desconstruímos e reconstruímos melhor
-                - entregamos as melhores soluções</p>
-            <p> simplicidade poderosa</p>
-             <div class="w3-third w3-margin-bottom" style="width: 700px;">
-                <img src="/img/bacground.webp" alt="Projeto 1" class="w3-image w3-card-4"
-                    style="height: 250px; object-fit: cover;">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Construindo o 
+                    <span class="gradient-text">Futuro</span> 
+                    de Marabá
+                </h1>
+                <p class="hero-description">
+                    Transformamos ideias em realidade com mais de 4 anos de experiência em construção civil. 
+                    Da fundação ao acabamento, garantimos qualidade e excelência em cada projeto.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn-secondary">Fale Conosco</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projetos Concluídos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Clientes Satisfeitos</span>
             </div>
         </div>
     </div>
-
-    <div class="w3-panel w3-text-grey">
-        <h4>TRABALHOS MAIS RECENTES:</h4>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="img/house_arch.jpg" alt="Construtora Metropolitana" />
+                    <div class="floating-card">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Projeto Aprovado</span>
+                    </div>
     </div>
-    <!-- Galeria de Projetos da Construtora -->
-    <div class="w3-container w3-padding-32 w3-light-grey">
-        <h2 class="w3-xxlarge w3-text-dark-grey w3-center">
-            <i class="fa fa-camera"></i> Nossos Projetos
-        </h2>
-        <p class="w3-large w3-text-grey w3-center">Confira alguns dos nossos empreendimentos realizados com excelência e
-            compromisso.</p>
+            </div>
+        </div>
+    </section>
 
-        <div class="w3-row-padding w3-margin-top">
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Soluções completas em construção civil para transformar seus sonhos em realidade</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Construção de Edifícios</h3>
+                    <p>Projetos residenciais e comerciais com tecnologia de ponta e acabamento impecável.</p>
+                    <ul>
+                        <li>Edifícios residenciais</li>
+                        <li>Prédios comerciais</li>
+                        <li>Condomínios</li>
+                    </ul>
+                </div>
 
-            <div class="w3-third w3-margin-bottom">
-                <img src="/img/house1.jpg" alt="Projeto 1" class="w3-image w3-card-4"
-                    style="height: 250px; object-fit: cover;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Infraestrutura</h3>
+                    <p>Construção de rodovias, ferrovias e obras de infraestrutura urbana.</p>
+                    <ul>
+                        <li>Rodovias e ferrovias</li>
+                        <li>Obras de urbanização</li>
+                        <li>Redes de energia</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Obras Especiais</h3>
+                    <p>Estruturas pré-moldadas, barragens e instalações esportivas de alta complexidade.</p>
+                    <ul>
+                        <li>Estruturas pré-moldadas</li>
+                        <li>Barragens e represas</li>
+                        <li>Instalações esportivas</li>
+                    </ul>
             </div>
 
-            <div class="w3-third w3-margin-bottom">
-                <img src="/img/house 2jpg.jpeg" alt="Projeto 2" class="w3-image w3-card-4"
-                    style="height: 250px; object-fit: cover;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Montagem Industrial</h3>
+                    <p>Montagem de estruturas metálicas e instalações industriais completas.</p>
+                    <ul>
+                        <li>Estruturas metálicas</li>
+                        <li>Galpões industriais</li>
+                        <li>Instalações técnicas</li>
+                    </ul>
             </div>
 
-            <div class="w3-third w3-margin-bottom">
-                <img src="/img/house 3.jpg" alt="Projeto 3" class="w3-image w3-card-4"
-                    style="height: 250px; object-fit: cover;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Gestão de resíduos e práticas sustentáveis em todas as etapas da construção.</p>
+                    <ul>
+                        <li>Gestão de resíduos</li>
+                        <li>Construção sustentável</li>
+                        <li>Materiais ecológicos</li>
+                    </ul>
             </div>
 
-            <div class="w3-third w3-margin-bottom">
-                <img src="/img/house 4.jpg" alt="Projeto 4" class="w3-image w3-card-4"
-                    style="height: 250px; object-fit: cover;">
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <img src="/img/house_arch.jpg" alt="Projeto 5" class="w3-image w3-card-4"
-                    style="height: 250px; object-fit: cover;">
-            </div>
-
-            <div class="w3-third w3-margin-bottom w3-display-container">
-                <div class="w3-padding w3-card-2 w3-white w3-center" style="height: 250px;">
-                    <p class="w3-large w3-text-grey">
-                        Demonstrações<br>
-                        Logos<br>
-                        Relatórios<br>
-                        Nomes<br>
-                        Eventos<br>
-                        Wordpress<br>
-                        Google<br>
-                        Otimizações
-                    </p>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Administração de Obras</h3>
+                    <p>Gestão completa de projetos com controle de qualidade e prazos rigorosos.</p>
+                    <ul>
+                        <li>Planejamento de obras</li>
+                        <li>Controle de qualidade</li>
+                        <li>Gestão de cronograma</li>
+                    </ul>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <div class="carousel-container">
-        <div class="carousel-track">
-            <img src="/img/house 4.jpg" alt="Imagem 1" />
-            <img src="/img/house 3.jpg" alt="Imagem 2" />
-            <img src="/img/house_arch.jpg" alt="Imagem 3" />
-            <img src="/img/house_arch.jpg" alt="Imagem 4" />
-            <img src="/img/house1.jpg" alt="Imagem 5" />
-        </div>
-    </div>
-
-
-    <div class="w3-panel w3-padding-32 w3-light-grey">
-        <h2 class="w3-xxlarge w3-text-dark-grey">
-            <i class="fa fa-building"></i> Construtora JR
-        </h2>
-        <p class="w3-large w3-text-grey">
-            Transformamos ideias em realidade com projetos residenciais, comerciais e industriais. Experiência,
-            qualidade e compromisso em cada detalhe.
-        </p>
-
-        <div class="w3-row w3-margin-top w3-grey  w3-text-center">
-            <div class="w3-third w3-padding">
-                <i class="fa fa-home w3-xxxlarge w3-text-brown"></i>
-                <h4 class="w3-margin-top">Residenciais</h4>
-                <p>Construção de casas, condomínios e edifícios sob medida, com conforto e modernidade.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <p class="section-subtitle">Conheça alguns dos nossos trabalhos mais recentes</p>
             </div>
-            <div class="w3-third w3-padding">
-                <i class="fa fa-briefcase w3-xxxlarge w3-text-brown"></i>
-                <h4 class="w3-margin-top">Comerciais</h4>
-                <p>Desenvolvemos lojas, centros comerciais e espaços empresariais com excelência.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/house1.jpg" alt="Residencial Moderno" />
+                        <div class="project-overlay">
+                            <h4>Residencial Moderno</h4>
+                            <p>Casa de alto padrão com design contemporâneo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/house 2jpg.jpeg" alt="Condomínio Familiar" />
+                        <div class="project-overlay">
+                            <h4>Condomínio Familiar</h4>
+                            <p>Projeto residencial com área de lazer completa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/house 3.jpg" alt="Casa Térrea Elegante" />
+                        <div class="project-overlay">
+                            <h4>Casa Térrea Elegante</h4>
+                            <p>Arquitetura clássica com toques modernos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/house 4.jpg" alt="Edifício Comercial" />
+                        <div class="project-overlay">
+                            <h4>Edifício Comercial</h4>
+                            <p>Centro empresarial moderno e funcional</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="w3-third w3-padding">
-                <i class="fa fa-industry w3-xxxlarge w3-text-brown"></i>
-                <h4 class="w3-margin-top">Industriais</h4>
-                <p>Projetos robustos e funcionais para indústrias e galpões logísticos.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre a Construtora Metropolitana</h2>
+                    <p>Fundada em 2021, a Construtora Metropolitana LTDA tem se destacado no mercado paraense como referência em construção civil, oferecendo soluções completas desde projetos residenciais até grandes obras de infraestrutura.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Empresa Registrada</h4>
+                                <p>CNPJ 40.733.815/0001-02 - Situação ativa no órgão competente</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização Estratégica</h4>
+                                <p>Baseados em Marabá, PA, atendemos toda a região sudeste do Pará</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Excelência Comprovada</h4>
+                                <p>Compromisso com qualidade e prazos em todos os projetos</p>
+        </div>
+    </div>
+        </div>
+    </div>
+                <div class="about-image">
+                    <img src="img/bacground.webp" alt="Sobre a Construtora" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Pronto para começar seu projeto? Fale conosco!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Q DOIS, 14 - Casa Construtora<br>Nova Marabá, Marabá - PA<br>CEP: 68.505-010</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefones</h4>
+                            <p>(94) 9274-7988<br>(93) 9145-6461</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>imfirmino.construtora@gmail.com</p>
             </div>
         </div>
     </div>
-
-
-
-    <div class="w3-row w3-section">
-        <div class="w3-third w3-container w3-black w3-large" style="height:250px">
-            <h2>Informações de Contato</h2>
-            <p><i class="fa fa-map-marker" style="width:30px"></i> Marabá, PA Brasil</p>
-            <p><i class="fa fa-phone" style="width:30px"></i> Telefone: +00 18786651515</p>
-            <p><i class="fa fa-envelope" style="width:30px"></i> E-mail: jaymerego2015@mail.com</p>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Seu telefone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Selecione o serviço</option>
+                                <option value="residencial">Construção Residencial</option>
+                                <option value="comercial">Construção Comercial</option>
+                                <option value="infraestrutura">Infraestrutura</option>
+                                <option value="reforma">Reforma/Ampliação</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Descreva seu projeto" rows="4" required></textarea>
         </div>
-        <div class="w3-third w3-center w3-large w3-dark-grey w3-text-white" style="height:250px">
-            <h2>Fale Conosco</h2>
-            <p>Se você tem uma ideia.</p>
-            <p>O que está esperando?</p>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
         </div>
-        <div class="w3-third w3-center w3-large w3-grey w3-text-white" style="height:250px">
-            <h2>Curta Nossa Página</h2>
-            <i class="w3-xlarge fa fa-facebook-official"></i><br>
-            <i class="w3-xlarge fa fa-pinterest-p"></i><br>
-            <i class="w3-xlarge fa fa-twitter"></i><br>
-            <i class="w3-xlarge fa fa-flickr"></i><br>
-            <i class="w3-xlarge fa fa-linkedin"></i>
         </div>
-        <div class="logo-mensagem">
-            <a href="https://wa.me/5594991518569?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento."
-                target="_blank">
-                <img class="link-whatsapp" src="./img/whatsapp-icon.png" />
-            </a>
-
-
         </div>
-    </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="footer">
+        <div class="container">
         <div class="footer-content">
-            <p>&copy; 2025 Construtora Metropolitana. Todos os direitos reservados.</p>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/construtoraLogo.png" alt="Construtora Metropolitana" class="footer-logo-img">
+                    </div>
+                    <p>Construindo o futuro com qualidade, inovação e compromisso. Sua obra em mãos seguras.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CUiMxKv2y/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lucasfirminobn?igsh=MTNydTJweGtna2E5Ng==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/5594992747988" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#services">Construção de Edifícios</a></li>
+                        <li><a href="#services">Infraestrutura</a></li>
+                        <li><a href="#services">Obras Especiais</a></li>
+                        <li><a href="#services">Montagem Industrial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Orçamentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Nova Marabá, Marabá - PA</p>
+                    <p><i class="fas fa-phone"></i> (94) 99274-7988</p>
+                    <p><i class="fas fa-envelope"></i> imfirmino.construtora@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (94) 9145-6461</p>
+                    <p>
+                        <i class="fab fa-whatsapp"></i> 
+                        <a href="https://wa.me/5594992747988?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento" target="_blank" class="whatsapp-contact">
+                            (94) 99274-7988
+                        </a>
+                    </p>
+              
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-credits">
+                    <div class="developer-section">
+                        <div class="developer-credit">
+                            <a href="https://jrstudio.netlify.app/" target="_blank" class="jr-studio-link">
+                                <img src="img/LogoJRstudio.png" alt="JR Studio" class="jr-studio-logo">
+                                <span class="credit-text">Desenvolvido por JR Studio</span>
+                            </a>
+                        </div>
+                        <div class="developer-contact">
+                            <div class="contact-info-dev">
+                                <p><i class="fas fa-code"></i> <strong>Desenvolvimento Web</strong></p>
+                                <p>
+                                    <i class="fab fa-whatsapp"></i> 
+                                    <a href="https://wa.me/5594991518569?text=Olá%2C%20gostaria%20de%20falar%20sobre%20desenvolvimento%20web" target="_blank" class="whatsapp-contact">
+                                        (94) 99151-8569
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Construtora Metropolitana LTDA. Todos os direitos reservados.</p>
+                    <p>CNPJ: 40.733.815/0001-02</p>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5594992747988?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>
